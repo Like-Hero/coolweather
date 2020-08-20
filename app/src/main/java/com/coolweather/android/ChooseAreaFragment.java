@@ -254,7 +254,7 @@ public class ChooseAreaFragment extends Fragment {
     /*
     * 显示进度对话框
     * */
-    private void showCustomProgressDialog() {
+    public void showCustomProgressDialog() {
         if (dialog == null) {
             LoadingDialog.Builder builder = new LoadingDialog.Builder(getContext())
                     .setMessage("加载中...")
@@ -267,7 +267,7 @@ public class ChooseAreaFragment extends Fragment {
     /*
     * 关闭进度对话框
     * */
-    private void closeCustomProgressDialog() {
+    public void closeCustomProgressDialog() {
         if (dialog != null) {
             dialog.dismiss();
         }
